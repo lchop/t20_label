@@ -1,0 +1,43 @@
+<div
+  class="container max-w-md bg-neutral-500 py-10 px-6 border-white border-4 rounded-2xl"
+>
+  <h2
+    class="text-white text-center text-xl font-medium uppercase tracking-wide font-poppins mb-12"
+  >
+    SONG NAME
+  </h2>
+  <h3
+    class="text-white text-center text-xl font-source-sans-pro tracking-wide mb-12"
+  >
+    Artiste name
+  </h3>
+  
+  <div class="bg-neutral-100 h-0.5 w-56 md:w-96 rounded-full overflow-hidden mb-1">
+    <div [ngStyle]="{'width.%':  percentageBar | number}" class="bg-gradient-to-r from-neutral-50 to-neutral-700 h-0.5 rounded-full"></div>
+  </div>
+  <div class="flex justify-between text-xs text-neutral-50 mb-12">
+    <div>{{ currentTime }}</div>
+    <div *ngIf="clickedPlay">- {{  timeLeft }}</div>
+  </div>
+
+
+
+  
+  <div class="flex place-content-center">
+    <button
+      *ngIf="clickedPlay == false; else pause"
+      (click)="onPlay()"
+      class="hover:animate-pulse flex h-12 w-12 rounded-full border-2 border-neutral-50 justify-center items-center"
+    >
+      <i class="ph-play-bold"></i>
+    </button>
+    <ng-template #pause>
+      <button
+        (click)="onPause()"
+        class="hover:animate-pulse flex h-12 w-12 rounded-full border-2 border-white justify-center items-center"
+      >
+        <i class="ph-pause-bold"></i>
+      </button>
+    </ng-template>
+  </div>
+</div>
