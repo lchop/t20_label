@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { PlayerAudio } from "../models/player-audio.model";
+import { PlayerAudio } from "./player-audio.model";
 
  @Injectable ({
      providedIn: 'root'

@@ -5,7 +5,7 @@ import { LandingPageComponent } from "./landing-page/landing-page.component";
 
 
 const routes: Routes = [
-    { path: 'facesnaps', component: PlayerAudioListComponent},
+    { path: 'sons', component: PlayerAudioListComponent},
     { path: '', component: LandingPageComponent},
 ];
 

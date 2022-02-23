@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PlayerAudio } from '../models/player-audio.model';
-import { PlayerAudioService } from '../services/player-audio.service';
+import { PlayerAudio } from './player-audio.model';
+import { PlayerAudioService } from './player-audio.service';
 
 //decorateur; vient apporter des modification à une classe.
 @Component({ 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PlayerAudio } from '../models/player-audio.model';
-import { PlayerAudioService } from '../services/player-audio.service';
+import { PlayerAudio } from '../player-audio/player-audio.model';
+import { PlayerAudioService } from '../player-audio/player-audio.service';
+
 
 @Component({
   selector: 'app-player-audio-list',
@@ -9,9 +10,12 @@ import { PlayerAudioService } from '../services/player-audio.service';
 export class PlayerAudioListComponent implements OnInit {
 
   playerAudios !: PlayerAudio[];
+  lastAudio !: PlayerAudio;
+
   constructor(private playerAudioService: PlayerAudioService) {}
   ngOnInit(){
     this.playerAudios = this.playerAudioService.getAllAudioPlayers();
+    this.lastAudio = this.playerAudioService.getAllAudioPlayers()[-1];
   }
 
 }

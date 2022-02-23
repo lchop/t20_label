@@ -1,6 +1,8 @@
-<div class="landing-block">
-    <img src="assets/snapface.png" alt="Snapface logo">
-    <div class="landing-links">
-      <button (click)="onContinue()">Continuer vers Snapface</button>
+<div class="grid place-content-center mt-4">
+    <div class="px-4 w-full mx-auto">
+      <h1 class="text-center text-4xl font-title">Decouvrez notre label</h1>
+      <p class="text-center text-lg text-neutral-600 py-6">Notre derniere sortie</p>
     </div>
+    <app-player-audio [playerAudio]="lastAudio"></app-player-audio>
+    <button class="m-12 py-8 px-4" (click)="onContinue()">Découvrir les autres sons du label</button>
 </div>

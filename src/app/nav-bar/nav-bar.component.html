@@ -1,13 +1,55 @@
-<header>
-  
-  <nav class="mx-auto py-12 text-center bg-neutral-500 text-neutral-50">
-    <a
-      routerLink=""
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      >Rapit</a
-    >
-    <br>
-    <a routerLink="facesnaps">FaceSnaps</a>
-  </nav>
-</header>
+<nav class="bg-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="flex space-x-7">
+        <!--Website Logo-->
+        <a href="#" class="flex items-center py-4 px-2">
+          <img src="assets/images/logo.jpeg" alt="Logo" class="h-12 w-12 mr-2" />
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-1">
+        <a
+          routerLink="sons"
+          routerLinkActive="active"
+          class="py-4 px-2 text-neutral-900 font-semibold"
+        >
+          Sons
+        </a>
+        <a
+          class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+        >
+          Artistes
+        </a>
+        <a
+          class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+        >
+          About
+        </a>
+        <a
+          href=""
+          routerLink="/first-component"
+          routerLinkActive="active"
+          class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+        >
+          Contact Us
+        </a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button class="outline-none menu-button">
+          <svg
+            class="w-6 h-6 text-gray-500"
+            x-show="! showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 00 24 24"
+            stroke="currentColor"
+          >
+            <path d="m4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
