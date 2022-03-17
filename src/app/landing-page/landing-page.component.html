@@ -1,9 +1,11 @@
 <div
   class="grid gap-12 from-primary-800 bg-gradient-to-b to-neutral-900 place-content-center"
 >
-  <div class="px-4 w-full mx-auto mt-4">
-    <h1 class="text-center font-mono text-4xl font-extrabold text-primary-50 px-4 py-8">
-      T2o LABEl
+
+  <div class="px-4 max-w-xl w-full mx-auto mt-4">
+    <h1 class="text-center text-4xl font-extrabold text-primary-50 bg-gradient-to-r from-primary-500 to-primary-800 inline leading-snug decoration-clone px-8">
+      T2o LABEl <br> Electro hip hob from Bordeaux.<br>
+      New release every week. <br>
     </h1>
     <div class="flex justify-between items-center px-2 py-4">
       <svg
@@ -49,7 +51,7 @@
           stroke-width="16"
         ></line>
       </svg>
-      <h2 class="text-center text-2xl font-bold text-primary-200 px-2 py-4">New release</h2>
+      <h2 class="text-center text-3xl font-bold text-primary-200 px-2 py-4">Latest drop</h2>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="56"
@@ -99,64 +101,69 @@
     <app-player-audio [playerAudio]="lastAudio"></app-player-audio>
   </div>
   <div class="flex justify-center items-center px-2 py-4">
-  <div class="relative group">
-    <div
-      class="animate-tilt group-hover:duration-200 duration-1000 group-hover:opacity-100 transition absolute inset-0.5 bg-gradient-to-r from-primary-500 to-secondary-700 rounded-lg blur opacity-75"
-    ></div>
-    <button
-      class="relative py-4 px-6 bg-neutral-900 rounded-lg leading-none flex items-center divide-x divide-neutral-400"
-      (click)="onContinue()"
-    >
-    <span class="text-primary-50 pr-6 group-hover:text-primary-100 transition duration-200 ">MORE</span>
-
-      <span class="flex items-center space-x-5 pl-6">
-        <svg
-          class="-rotate-6 h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          width="56"
-          height="56"
-          fill="#8662C7"
-          viewBox="0 0 256 256"
+    <div class="relative group">
+      <div
+        class="animate-tilt group-hover:duration-200 duration-1000 group-hover:opacity-100 transition absolute inset-0.5 bg-gradient-to-r from-primary-500 to-secondary-700 rounded-lg blur opacity-75"
+      ></div>
+      <button
+        class="relative py-4 px-6 bg-neutral-900 rounded-lg leading-none flex items-center divide-x divide-neutral-400"
+        (click)="onContinue()"
+      >
+        <span
+          class="text-primary-50 pr-6 group-hover:text-primary-100 transition duration-200 "
+          >MORE</span
         >
-          <rect width="256" height="256" fill="none"></rect>
-          <polygon
-            points="136 32 232 128 136 224 136 176 104 176 104 80 136 80 136 32"
-            opacity="0.2"
-          ></polygon>
-          <polygon
-            points="136 32 232 128 136 224 136 176 104 176 104 80 136 80 136 32"
-            fill="none"
-            stroke="#8662C7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-          ></polygon>
-          <line
-            x1="40"
-            y1="176"
-            x2="40"
-            y2="80"
-            fill="none"
-            stroke="#8662C7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-          ></line>
-          <line
-            x1="72"
-            y1="176"
-            x2="72"
-            y2="80"
-            fill="none"
-            stroke="#8662C7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-          ></line>
-        </svg>
-      </span>
-      <!-- <span class="text-primary-400 pl-6">TEST2</span> -->
-    </button>
-  </div>
+
+        <span class="flex items-center space-x-5 pl-6">
+          <svg
+            class="-rotate-6 h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="56"
+            height="56"
+            fill="#8662C7"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <polygon
+              points="136 32 232 128 136 224 136 176 104 176 104 80 136 80 136 32"
+              opacity="0.2"
+            ></polygon>
+            <polygon
+              points="136 32 232 128 136 224 136 176 104 176 104 80 136 80 136 32"
+              fill="none"
+              stroke="#8662C7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polygon>
+            <line
+              x1="40"
+              y1="176"
+              x2="40"
+              y2="80"
+              fill="none"
+              stroke="#8662C7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <line
+              x1="72"
+              y1="176"
+              x2="72"
+              y2="80"
+              fill="none"
+              stroke="#8662C7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+          </svg>
+        </span>
+        <!-- <span class="text-primary-400 pl-6">TEST2</span> -->
+      </button>
+      
+    </div>
+    
   </div>
 </div>

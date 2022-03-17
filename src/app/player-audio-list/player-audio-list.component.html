@@ -1,7 +1,26 @@
 
-<div class="py-4 px-8 grid grid-cols-1 gap-10 place-items-center">
-  <app-player-audio
-  *ngFor="let myPlayer of playerAudios"
-  [playerAudio]="myPlayer"
-></app-player-audio>
+<div class="bg-white min-h-screen flex items-center justify-center px-16">
+  <div class="relative max-w-lg w-full">
+    <div
+      class="absolute top-0 -left-4 animation-delay-2000 animate-blob  w-72 h-72 rounded-full bg-primary-200 mix-blend-multiply filter blur-2xl opacity-70"
+    ></div>
+    <div
+      class="absolute top-0 -right-4 animation-delay-4000 animate-blob w-72 h-72 rounded-full bg-secondary-200 mix-blend-multiply filter blur-2xl opacity-70"
+    ></div>
+    <div
+      class="absolute -bottom-14 left-20 animate-blob w-72 h-72 rounded-full bg-yellow-200 mix-blend-multiply filter blur-2xl opacity-70"
+    ></div>
+  </div>
+  <div class="py-4 px-8 grid grid-cols-1 gap-10 place-items-center">
+    <app-player-audio
+    *ngFor="let myPlayer of playerAudios"
+    [playerAudio]="myPlayer"
+  ></app-player-audio>
+
+  </div>
+  
 </div>
+
+
+
+
