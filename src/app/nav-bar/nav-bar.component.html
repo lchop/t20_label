@@ -1,35 +1,49 @@
-<nav class="bg-white shadow-lg">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex justify-between">
-      <div class="flex space-x-7">
-        <!--Website Logo-->
-        <a href="#" class="flex items-center py-4 px-2">
-          <img src="assets/images/logo.jpeg" alt="Logo" class="h-12 w-12 mr-2" />
+
+<nav class="from-secondary-900 to-primary-800 bg-gradient-to-b border-primary-50 shadow-primary-50">
+    <div class="flex justify-end items-center px-10 py-5">
+      <div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#EAE2F8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="184 48 224 48 224 88" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 208 32 208 32 168" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="224 168 224 208 184 208" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="32 88 32 48 72 48" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="80" y1="88" x2="80" y2="168" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="176" y1="88" x2="176" y2="168" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="144" y1="88" x2="144" y2="168" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="112" y1="88" x2="112" y2="168" fill="none" stroke="#EAE2F8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
         </a>
       </div>
-      <div class="hidden md:flex items-center space-x-1">
-        <a
+        
+      <div class="md:flex items-center mx-auto gap-4">
+        <a (click)="onClickSound()"
+          [ngClass]="{'border-b-0': !menuSoundClicked,
+                      'border-b-2' : menuSoundClicked}"
           routerLink="sons"
           routerLinkActive="active"
-          class="py-4 px-2 text-neutral-900 font-semibold"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
         >
           Sons
         </a>
         <a
-          class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+          (click)="onClickArtist()"
+          [ngClass]="{'border-b-0': !menuArtistClicked,
+                      'border-b-2' : menuArtistClicked}"
+          routerLink="sons"
+          routerLinkActive="active"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
         >
           Artistes
         </a>
         <a
-          class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+          (click)="onClickLabel()"
+          [ngClass]="{'border-b-0': !menuLabelClicked,
+                      'border-b-2' : menuLabelClicked}"
+          routerLink="sons"
+          routerLinkActive="active"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
         >
-          About
+          Label
         </a>
         <a
-          href=""
-          routerLink="/first-component"
+          (click)="onClickContact()"
+          [ngClass]="{'border-b-0': !menuContactClicked,
+                      'border-b-2' : menuContactClicked}"
+          routerLink="sons"
           routerLinkActive="active"
-          class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
         >
           Contact Us
         </a>
@@ -51,5 +65,5 @@
         </button>
       </div>
     </div>
-  </div>
 </nav>
+

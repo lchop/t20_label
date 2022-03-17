@@ -4,28 +4,28 @@ module.exports = {
   theme: {
     colors: {
       primary: {
-        50: "#F5E1F7",
-        100: "#ECBDF2",
-        200: "#CE80D9",
-        300: "#BB61C7",
-        400: "#AD4BB8",
-        500: "#A23DAD",
-        600: "#90279C",
-        700: "#7C1A87",
-        800: "#671270",
-        900: "#4E0754",
+        50: "#EAE2F8",
+        100: "#CFBCF2",
+        200: "#A081D9",
+        300: "#8662C7",
+        400: "#724BB7",
+        500: "#653CAD",
+        600: "#51279B",
+        700: "#421987",
+        800: "#34126F",
+        900: "#240754",
       },
       secondary: {
-        50: "#FFE8D9",
-        100: "#FFD0B5",
-        200: "#FFB088",
-        300: "#FF9466",
-        400: "#F9703E",
-        500: "#F35627",
-        600: "#DE3A11",
-        700: "#C52707",
-        800: "#AD1D07",
-        900: "#841003",
+        50: "#FFE3E3",
+        100: "#FFBDBD",
+        200: "#FF9B9B",
+        300: "#F86A6A",
+        400: "#EF4E4E",
+        500: "#E12D39",
+        600: "#CF1124",
+        700: "#AB091E",
+        800: "#8A041A",
+        900: "#610316",
       },
       neutral: colors.gray,
       black: colors.black,
@@ -44,14 +44,47 @@ module.exports = {
       rose: colors.rose,
       yellow: colors.yellow,
     },
-    borderColor: (theme) => ({
-      ...theme("colors"),
-      DEFAULT: theme("colors.neutral.200", "currentColor"),
-    }),
-    backgroundColor: (theme) => ({
-      ...theme("colors"),
-    }),
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      animation: {
+        'spin-slow': 'spin 45s ease infinite',
+        'pulse-slow': 'pulse 5s ease infinite',
+        'tilt': 'tilt 5s linear infinite',
+      },
+      keyframes: 
+      {
+        tilt: {
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)"
+          },
+          "25%": {
+            transform: "rotate(5deg)"
+          },
+          "75%": {
+            transform: "rotate(-5deg)"
+          }
+        }
+      },
+      fontFamily: {
+        'sans' : ['Barlow', 'Helvetica', 'Arial', 'sans-serif'],
+        'title' : ['Noto Sans', 'Helvetica', 'Arial', 'sans-serif']
+        },
+        width: {
+          '112' : '28rem',
+          '138' : '32rem',
+          '164' : '36rem',
+          '246' : '54rem'
+        },
+        maxWidth: {
+          '246' : '54rem'
+        },
+        height: {
+          '112' : '28rem',
+          '138' : '32rem',
+        },
+        lineHeight: {
+          '12' : '3rem'
+        }
+      }
+    },
+    plugins: [],
  };
