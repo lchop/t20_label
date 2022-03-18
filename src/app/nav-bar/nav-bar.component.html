@@ -10,59 +10,43 @@
       <div class="md:flex items-center gap-4">
         <a (click)="onClickSound()"
           [ngClass]="{'border-b-0': !menuSoundClicked,
-                      'border-b-2' : menuSoundClicked}"
+                      'border-b-4' : menuSoundClicked}"
           routerLink="sons"
           routerLinkActive="active"
-          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-primary-50 hover:border-b-4"
         >
           Sons
         </a>
         <a
           (click)="onClickArtist()"
           [ngClass]="{'border-b-0': !menuArtistClicked,
-                      'border-b-2' : menuArtistClicked}"
+                      'border-b-4' : menuArtistClicked}"
           routerLink="sons"
           routerLinkActive="active"
-          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-primary-50 hover:border-b-4"
         >
           Artistes
         </a>
         <a
           (click)="onClickLabel()"
           [ngClass]="{'border-b-0': !menuLabelClicked,
-                      'border-b-2' : menuLabelClicked}"
+                      'border-b-4' : menuLabelClicked}"
           routerLink="sons"
           routerLinkActive="active"
-          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-primary-50 hover:border-b-4"
         >
           Label
         </a>
         <a
           (click)="onClickContact()"
           [ngClass]="{'border-b-0': !menuContactClicked,
-                      'border-b-2' : menuContactClicked}"
+                      'border-b-4' : menuContactClicked}"
           routerLink="sons"
           routerLinkActive="active"
-          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-secondary-400"
+          class="font-medium px-4 py-2 text-primary-50 hover:text-primary-100 border-primary-50 hover:border-b-4 "
         >
           Contact Us
         </a>
-      </div>
-      <div class="md:hidden flex items-center">
-        <button class="outline-none menu-button">
-          <svg
-            class="w-6 h-6 text-gray-500"
-            x-show="! showMenu"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 00 24 24"
-            stroke="currentColor"
-          >
-            <path d="m4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
       </div>
     </div>
 </nav>

@@ -7,6 +7,7 @@ import { PlayerAudioListComponent } from './player-audio-list/player-audio-list.
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     PlayerAudioListComponent,
     NavBarComponent,
     LandingPageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
